@@ -1,0 +1,67 @@
+.xl-text {
+  font-size: 75px;
+}
+
+// .btn-outline-secondary {
+//   color: var(--bs-primary);
+// }
+
+// .btn-outline-secondary {
+//   &:hover {
+//     color: #fff;
+//   }
+// }
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky {
+  background: #d1e0d7;
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.custom-nav-item {
+  display: inline-block; /* Ensures it's displayed inline */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  list-style: none; /* Remove list-style */
+}
+
+.custom-nav-item .btn {
+  border: 1px solid #4d725bff; /* Add an outline border */
+  background-color: transparent; /* Set a transparent background */
+  color: #333; /* Set text color */
+}
+
+.custom-nav-item .btn:hover {
+  background-color: #4d725bff; /* Change background on hover if desired */
+  color: #fff; /* Change text color on hover if desired */
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.store_logo {
+  width: 100px;
+}
+
+.galleryimg {
+  // resize the images
+  width: 100%; 
+  // height: 200px;
+  margin: 4px 2px; /* Doubled margin-bottom (4px) while keeping margin-left and margin-right (2px) */
+}
+
+@media (max-width: 992px) {
+  .xl-text {
+    font-size: 50px;
+  }
+
+  .navbar {
+    .btn-outline-secondary {
+      margin-top: 20px;
+    }
+  }
+}
