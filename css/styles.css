@@ -41,25 +41,52 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.6rem;
+  padding: 1.6rem;
 }
+
 .gallery-item {
   overflow: hidden;
 }
+
 .gallery-item img {
   display: block;
   width: 100%;
   transition: all 0.4s;
 }
+
 .gallery-item img:hover {
   transform: scale(1.1);
 }
 
-/* .galleryimg {
-  width: 100%;
-  margin: 4px 4px; /* Doubled margin-bottom (4px) while keeping margin-left and margin-right (2px) 
-} */
+.to-top-btn {
+  position: fixed;
+  z-index: 20;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #44434a;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.to-top-btn:hover {
+  background-color: #1d1d21;
+}
+
+.to-top-btn img {
+  margin-bottom: 0.25rem;
+  width: 18px;
+}
+
+.show {
+  opacity: 1;
+}
 
 @media (max-width: 992px) {
   .xl-text {
